@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F1FBA9A16F25EF700363FD8 /* RecipeFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FBA9916F25EF700363FD8 /* RecipeFormView.m */; };
+		1F91950D16F2C9D00026D775 /* Ingredient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F91950C16F2C9D00026D775 /* Ingredient.m */; };
+		1F91951016F2C9D00026D775 /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F91950F16F2C9D00026D775 /* Recipe.m */; };
+		1FA83CBB16EEC8B900EDE028 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA83CBA16EEC8B900EDE028 /* UIKit.framework */; };
+		1FA83CBD16EEC8B900EDE028 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA83CBC16EEC8B900EDE028 /* Foundation.framework */; };
+		1FA83CBF16EEC8B900EDE028 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA83CBE16EEC8B900EDE028 /* CoreGraphics.framework */; };
+		1FA83CC116EEC8B900EDE028 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA83CC016EEC8B900EDE028 /* CoreData.framework */; };
+		1FA83CC716EEC8B900EDE028 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FA83CC516EEC8B900EDE028 /* InfoPlist.strings */; };
+		1FA83CC916EEC8B900EDE028 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA83CC816EEC8B900EDE028 /* main.m */; };
+		1FA83CCD16EEC8B900EDE028 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA83CCC16EEC8B900EDE028 /* AppDelegate.m */; };
+		1FA83CCF16EEC8B900EDE028 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA83CCE16EEC8B900EDE028 /* Default.png */; };
+		1FA83CD116EEC8B900EDE028 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA83CD016EEC8B900EDE028 /* Default@2x.png */; };
+		1FA83CD316EEC8B900EDE028 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA83CD216EEC8B900EDE028 /* Default-568h@2x.png */; };
+		1FA83CD616EEC8B900EDE028 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FA83CD416EEC8B900EDE028 /* MainStoryboard_iPhone.storyboard */; };
+		1FA83CD916EEC8B900EDE028 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FA83CD716EEC8B900EDE028 /* MainStoryboard_iPad.storyboard */; };
+		1FA83CDC16EEC8B900EDE028 /* Recipe_Holder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1FA83CDA16EEC8B900EDE028 /* Recipe_Holder.xcdatamodeld */; };
+		1FA83CED16EEC98000EDE028 /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA83CEA16EEC98000EDE028 /* ECSlidingViewController.m */; };
+		1FA83CEE16EEC98000EDE028 /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA83CEC16EEC98000EDE028 /* UIImage+ImageWithUIView.m */; };
+		1FA83CF116EEC9BF00EDE028 /* InitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA83CF016EEC9BF00EDE028 /* InitViewController.m */; };
+		1FA83CF416EEC9E700EDE028 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA83CF316EEC9E700EDE028 /* MenuViewController.m */; };
+		1FA83D0116EEE93C00EDE028 /* NavBarIconLauncher@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA83CFF16EEE93C00EDE028 /* NavBarIconLauncher@2x.png */; };
+		1FA83D0216EEE93C00EDE028 /* NavBarIconLauncher.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FA83D0016EEE93C00EDE028 /* NavBarIconLauncher.png */; };
+		1FA83D0B16EFA29400EDE028 /* AddRecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA83D0A16EFA29300EDE028 /* AddRecipeViewController.m */; };
+		1FA83D0E16EFA31B00EDE028 /* RecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA83D0D16EFA31B00EDE028 /* RecipeViewController.m */; };
+		1FBBA16216F2D1570081DCD9 /* RecipeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBBA16116F2D1570081DCD9 /* RecipeTableViewController.m */; };
+		1FBBA16516F2D1790081DCD9 /* NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBBA16416F2D1790081DCD9 /* NavigationViewController.m */; };
+		1FBBA16B16F3DA100081DCD9 /* ViewRecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBBA16A16F3DA100081DCD9 /* ViewRecipeViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F1FBA9816F25EF700363FD8 /* RecipeFormView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeFormView.h; sourceTree = "<group>"; };
+		1F1FBA9916F25EF700363FD8 /* RecipeFormView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeFormView.m; sourceTree = "<group>"; };
+		1F91950B16F2C9D00026D775 /* Ingredient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ingredient.h; sourceTree = "<group>"; };
+		1F91950C16F2C9D00026D775 /* Ingredient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ingredient.m; sourceTree = "<group>"; };
+		1F91950E16F2C9D00026D775 /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
+		1F91950F16F2C9D00026D775 /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
+		1FA83CB716EEC8B900EDE028 /* Recipe Holder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipe Holder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FA83CBA16EEC8B900EDE028 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1FA83CBC16EEC8B900EDE028 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1FA83CBE16EEC8B900EDE028 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1FA83CC016EEC8B900EDE028 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1FA83CC416EEC8B900EDE028 /* Recipe Holder-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Recipe Holder-Info.plist"; sourceTree = "<group>"; };
+		1FA83CC616EEC8B900EDE028 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1FA83CC816EEC8B900EDE028 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1FA83CCA16EEC8B900EDE028 /* Recipe Holder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Recipe Holder-Prefix.pch"; sourceTree = "<group>"; };
+		1FA83CCB16EEC8B900EDE028 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1FA83CCC16EEC8B900EDE028 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1FA83CCE16EEC8B900EDE028 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		1FA83CD016EEC8B900EDE028 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		1FA83CD216EEC8B900EDE028 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1FA83CD516EEC8B900EDE028 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		1FA83CD816EEC8B900EDE028 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		1FA83CDB16EEC8B900EDE028 /* Recipe_Holder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Recipe_Holder.xcdatamodel; sourceTree = "<group>"; };
+		1FA83CE916EEC98000EDE028 /* ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingViewController.h; sourceTree = "<group>"; };
+		1FA83CEA16EEC98000EDE028 /* ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingViewController.m; sourceTree = "<group>"; };
+		1FA83CEB16EEC98000EDE028 /* UIImage+ImageWithUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageWithUIView.h"; sourceTree = "<group>"; };
+		1FA83CEC16EEC98000EDE028 /* UIImage+ImageWithUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageWithUIView.m"; sourceTree = "<group>"; };
+		1FA83CEF16EEC9BF00EDE028 /* InitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitViewController.h; sourceTree = "<group>"; };
+		1FA83CF016EEC9BF00EDE028 /* InitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitViewController.m; sourceTree = "<group>"; };
+		1FA83CF216EEC9E700EDE028 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		1FA83CF316EEC9E700EDE028 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		1FA83CFF16EEE93C00EDE028 /* NavBarIconLauncher@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavBarIconLauncher@2x.png"; sourceTree = "<group>"; };
+		1FA83D0016EEE93C00EDE028 /* NavBarIconLauncher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavBarIconLauncher.png; sourceTree = "<group>"; };
+		1FA83D0916EFA29300EDE028 /* AddRecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddRecipeViewController.h; sourceTree = "<group>"; };
+		1FA83D0A16EFA29300EDE028 /* AddRecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddRecipeViewController.m; sourceTree = "<group>"; };
+		1FA83D0C16EFA31B00EDE028 /* RecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeViewController.h; sourceTree = "<group>"; };
+		1FA83D0D16EFA31B00EDE028 /* RecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeViewController.m; sourceTree = "<group>"; };
+		1FBBA16016F2D1570081DCD9 /* RecipeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeTableViewController.h; sourceTree = "<group>"; };
+		1FBBA16116F2D1570081DCD9 /* RecipeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeTableViewController.m; sourceTree = "<group>"; };
+		1FBBA16316F2D1790081DCD9 /* NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationViewController.h; sourceTree = "<group>"; };
+		1FBBA16416F2D1790081DCD9 /* NavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationViewController.m; sourceTree = "<group>"; };
+		1FBBA16916F3DA100081DCD9 /* ViewRecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewRecipeViewController.h; sourceTree = "<group>"; };
+		1FBBA16A16F3DA100081DCD9 /* ViewRecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewRecipeViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FA83CB416EEC8B900EDE028 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FA83CBB16EEC8B900EDE028 /* UIKit.framework in Frameworks */,
+				1FA83CBD16EEC8B900EDE028 /* Foundation.framework in Frameworks */,
+				1FA83CBF16EEC8B900EDE028 /* CoreGraphics.framework in Frameworks */,
+				1FA83CC116EEC8B900EDE028 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FA83CAE16EEC8B900EDE028 = {
+			isa = PBXGroup;
+			children = (
+				1FA83CC216EEC8B900EDE028 /* Recipe Holder */,
+				1FA83CE816EEC98000EDE028 /* ECSlidingViewController */,
+				1FA83CB916EEC8B900EDE028 /* Frameworks */,
+				1FA83CB816EEC8B900EDE028 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1FA83CB816EEC8B900EDE028 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FA83CB716EEC8B900EDE028 /* Recipe Holder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FA83CB916EEC8B900EDE028 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FA83CBA16EEC8B900EDE028 /* UIKit.framework */,
+				1FA83CBC16EEC8B900EDE028 /* Foundation.framework */,
+				1FA83CBE16EEC8B900EDE028 /* CoreGraphics.framework */,
+				1FA83CC016EEC8B900EDE028 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1FA83CC216EEC8B900EDE028 /* Recipe Holder */ = {
+			isa = PBXGroup;
+			children = (
+				1FA83CDA16EEC8B900EDE028 /* Recipe_Holder.xcdatamodeld */,
+				1FA83CCB16EEC8B900EDE028 /* AppDelegate.h */,
+				1FA83CCC16EEC8B900EDE028 /* AppDelegate.m */,
+				1FA83CF616EECA0700EDE028 /* Interfaces */,
+				1FA83CF516EEC9F100EDE028 /* Menu */,
+				1FA83CFA16EECB2400EDE028 /* Views */,
+				1FA83D1816EFB5C100EDE028 /* Data Models */,
+				1FA83CC316EEC8B900EDE028 /* Supporting Files */,
+			);
+			path = "Recipe Holder";
+			sourceTree = "<group>";
+		};
+		1FA83CC316EEC8B900EDE028 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FA83CFF16EEE93C00EDE028 /* NavBarIconLauncher@2x.png */,
+				1FA83D0016EEE93C00EDE028 /* NavBarIconLauncher.png */,
+				1FA83CC416EEC8B900EDE028 /* Recipe Holder-Info.plist */,
+				1FA83CC516EEC8B900EDE028 /* InfoPlist.strings */,
+				1FA83CC816EEC8B900EDE028 /* main.m */,
+				1FA83CCA16EEC8B900EDE028 /* Recipe Holder-Prefix.pch */,
+				1FA83CCE16EEC8B900EDE028 /* Default.png */,
+				1FA83CD016EEC8B900EDE028 /* Default@2x.png */,
+				1FA83CD216EEC8B900EDE028 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1FA83CE816EEC98000EDE028 /* ECSlidingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1FA83CE916EEC98000EDE028 /* ECSlidingViewController.h */,
+				1FA83CEA16EEC98000EDE028 /* ECSlidingViewController.m */,
+				1FA83CEB16EEC98000EDE028 /* UIImage+ImageWithUIView.h */,
+				1FA83CEC16EEC98000EDE028 /* UIImage+ImageWithUIView.m */,
+			);
+			path = ECSlidingViewController;
+			sourceTree = "<group>";
+		};
+		1FA83CF516EEC9F100EDE028 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				1FA83CEF16EEC9BF00EDE028 /* InitViewController.h */,
+				1FA83CF016EEC9BF00EDE028 /* InitViewController.m */,
+				1FA83CF216EEC9E700EDE028 /* MenuViewController.h */,
+				1FA83CF316EEC9E700EDE028 /* MenuViewController.m */,
+				1FA83D0916EFA29300EDE028 /* AddRecipeViewController.h */,
+				1FA83D0A16EFA29300EDE028 /* AddRecipeViewController.m */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		1FA83CF616EECA0700EDE028 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				1FA83CD416EEC8B900EDE028 /* MainStoryboard_iPhone.storyboard */,
+				1FA83CD716EEC8B900EDE028 /* MainStoryboard_iPad.storyboard */,
+				1F1FBA9816F25EF700363FD8 /* RecipeFormView.h */,
+				1F1FBA9916F25EF700363FD8 /* RecipeFormView.m */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		1FA83CFA16EECB2400EDE028 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1FBBA16016F2D1570081DCD9 /* RecipeTableViewController.h */,
+				1FBBA16116F2D1570081DCD9 /* RecipeTableViewController.m */,
+				1FA83D0C16EFA31B00EDE028 /* RecipeViewController.h */,
+				1FA83D0D16EFA31B00EDE028 /* RecipeViewController.m */,
+				1FBBA16316F2D1790081DCD9 /* NavigationViewController.h */,
+				1FBBA16416F2D1790081DCD9 /* NavigationViewController.m */,
+				1FBBA16916F3DA100081DCD9 /* ViewRecipeViewController.h */,
+				1FBBA16A16F3DA100081DCD9 /* ViewRecipeViewController.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		1FA83D1816EFB5C100EDE028 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F91950E16F2C9D00026D775 /* Recipe.h */,
+				1F91950F16F2C9D00026D775 /* Recipe.m */,
+				1F91950B16F2C9D00026D775 /* Ingredient.h */,
+				1F91950C16F2C9D00026D775 /* Ingredient.m */,
+			);
+			name = "Data Models";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FA83CB616EEC8B900EDE028 /* Recipe Holder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FA83CE516EEC8B900EDE028 /* Build configuration list for PBXNativeTarget "Recipe Holder" */;
+			buildPhases = (
+				1FA83CB316EEC8B900EDE028 /* Sources */,
+				1FA83CB416EEC8B900EDE028 /* Frameworks */,
+				1FA83CB516EEC8B900EDE028 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Recipe Holder";
+			productName = "Recipe Holder";
+			productReference = 1FA83CB716EEC8B900EDE028 /* Recipe Holder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FA83CAF16EEC8B900EDE028 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Callahan;
+			};
+			buildConfigurationList = 1FA83CB216EEC8B900EDE028 /* Build configuration list for PBXProject "Recipe Holder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1FA83CAE16EEC8B900EDE028;
+			productRefGroup = 1FA83CB816EEC8B900EDE028 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FA83CB616EEC8B900EDE028 /* Recipe Holder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FA83CB516EEC8B900EDE028 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FA83CC716EEC8B900EDE028 /* InfoPlist.strings in Resources */,
+				1FA83CCF16EEC8B900EDE028 /* Default.png in Resources */,
+				1FA83CD116EEC8B900EDE028 /* Default@2x.png in Resources */,
+				1FA83CD316EEC8B900EDE028 /* Default-568h@2x.png in Resources */,
+				1FA83CD616EEC8B900EDE028 /* MainStoryboard_iPhone.storyboard in Resources */,
+				1FA83CD916EEC8B900EDE028 /* MainStoryboard_iPad.storyboard in Resources */,
+				1FA83D0116EEE93C00EDE028 /* NavBarIconLauncher@2x.png in Resources */,
+				1FA83D0216EEE93C00EDE028 /* NavBarIconLauncher.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FA83CB316EEC8B900EDE028 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FA83CC916EEC8B900EDE028 /* main.m in Sources */,
+				1FA83CCD16EEC8B900EDE028 /* AppDelegate.m in Sources */,
+				1FA83CDC16EEC8B900EDE028 /* Recipe_Holder.xcdatamodeld in Sources */,
+				1FA83CED16EEC98000EDE028 /* ECSlidingViewController.m in Sources */,
+				1FA83CEE16EEC98000EDE028 /* UIImage+ImageWithUIView.m in Sources */,
+				1FA83CF116EEC9BF00EDE028 /* InitViewController.m in Sources */,
+				1FA83CF416EEC9E700EDE028 /* MenuViewController.m in Sources */,
+				1FA83D0B16EFA29400EDE028 /* AddRecipeViewController.m in Sources */,
+				1FA83D0E16EFA31B00EDE028 /* RecipeViewController.m in Sources */,
+				1F1FBA9A16F25EF700363FD8 /* RecipeFormView.m in Sources */,
+				1F91950D16F2C9D00026D775 /* Ingredient.m in Sources */,
+				1F91951016F2C9D00026D775 /* Recipe.m in Sources */,
+				1FBBA16216F2D1570081DCD9 /* RecipeTableViewController.m in Sources */,
+				1FBBA16516F2D1790081DCD9 /* NavigationViewController.m in Sources */,
+				1FBBA16B16F3DA100081DCD9 /* ViewRecipeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1FA83CC516EEC8B900EDE028 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FA83CC616EEC8B900EDE028 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1FA83CD416EEC8B900EDE028 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FA83CD516EEC8B900EDE028 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		1FA83CD716EEC8B900EDE028 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FA83CD816EEC8B900EDE028 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FA83CE316EEC8B900EDE028 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1FA83CE416EEC8B900EDE028 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1FA83CE616EEC8B900EDE028 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Recipe Holder/Recipe Holder-Prefix.pch";
+				INFOPLIST_FILE = "Recipe Holder/Recipe Holder-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1FA83CE716EEC8B900EDE028 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Recipe Holder/Recipe Holder-Prefix.pch";
+				INFOPLIST_FILE = "Recipe Holder/Recipe Holder-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FA83CB216EEC8B900EDE028 /* Build configuration list for PBXProject "Recipe Holder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FA83CE316EEC8B900EDE028 /* Debug */,
+				1FA83CE416EEC8B900EDE028 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FA83CE516EEC8B900EDE028 /* Build configuration list for PBXNativeTarget "Recipe Holder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FA83CE616EEC8B900EDE028 /* Debug */,
+				1FA83CE716EEC8B900EDE028 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1FA83CDA16EEC8B900EDE028 /* Recipe_Holder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1FA83CDB16EEC8B900EDE028 /* Recipe_Holder.xcdatamodel */,
+			);
+			currentVersion = 1FA83CDB16EEC8B900EDE028 /* Recipe_Holder.xcdatamodel */;
+			path = Recipe_Holder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1FA83CAF16EEC8B900EDE028 /* Project object */;
+}
