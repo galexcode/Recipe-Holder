@@ -1,13 +1,19 @@
 //
-//  AddRecipeViewController.h
+//  Recipe.m
 //  Recipe_Holder
 //
 //  Created by Cody Callahan on 4/15/13.
 //  Copyright (c) 2013 Callahan. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "Recipe.h"
 
-@interface AddRecipeViewController : UIViewController
+
+@implementation Recipe
+
+@dynamic category;
+@dynamic desc;
+@dynamic instructions;
+@dynamic title;
 
 @end
