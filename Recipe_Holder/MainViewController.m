@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "IIViewDeckController.h"
+#import "AddRecipeViewController.h"
 
 @interface MainViewController ()
 
@@ -36,7 +37,12 @@
     
     //connect left bar button
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"left" style:UIBarButtonItemStyleBordered target:self.viewDeckController action:@selector(toggleLeftView)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addRecipe)];
     
+}
+-(void)addRecipe {
+    AddRecipeViewController *addRecipe = [[AddRecipeViewController alloc]initWithNibName:@"AddRecipeViewController" bundle:nil];
+    [self presentViewController:addRecipe animated:YES completion:nil];
 }
 
 - (void)viewDidUnload
