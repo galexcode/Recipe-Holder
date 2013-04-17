@@ -10,8 +10,8 @@
 		1F06C582171CE5A200607F5E /* Ingredient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F06C581171CE5A200607F5E /* Ingredient.m */; };
 		1F06C585171CE5A300607F5E /* Recipe.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F06C584171CE5A300607F5E /* Recipe.m */; };
 		1F06C587171CE64C00607F5E /* RecipeFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F06C57F171CE3A400607F5E /* RecipeFormView.m */; };
-		1F107941171D0D8B00560E85 /* AddRecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F10793F171D0D8B00560E85 /* AddRecipeViewController.m */; };
-		1F107942171D0D8B00560E85 /* AddRecipeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F107940171D0D8B00560E85 /* AddRecipeViewController.xib */; };
+		1F107946171E2CC500560E85 /* AddRecipeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F107944171E2CC500560E85 /* AddRecipeViewController.m */; };
+		1F107947171E2CC500560E85 /* AddRecipeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F107945171E2CC500560E85 /* AddRecipeViewController.xib */; };
 		1FF7B9AA171CB0FA00587A57 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF7B9A9171CB0FA00587A57 /* UIKit.framework */; };
 		1FF7B9AC171CB0FA00587A57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF7B9AB171CB0FA00587A57 /* Foundation.framework */; };
 		1FF7B9AE171CB0FA00587A57 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF7B9AD171CB0FA00587A57 /* CoreGraphics.framework */; };
@@ -40,9 +40,9 @@
 		1F06C581171CE5A200607F5E /* Ingredient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ingredient.m; sourceTree = "<group>"; };
 		1F06C583171CE5A300607F5E /* Recipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Recipe.h; sourceTree = "<group>"; };
 		1F06C584171CE5A300607F5E /* Recipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Recipe.m; sourceTree = "<group>"; };
-		1F10793E171D0D8B00560E85 /* AddRecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddRecipeViewController.h; path = ../AddRecipeViewController.h; sourceTree = "<group>"; };
-		1F10793F171D0D8B00560E85 /* AddRecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddRecipeViewController.m; path = ../AddRecipeViewController.m; sourceTree = "<group>"; };
-		1F107940171D0D8B00560E85 /* AddRecipeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddRecipeViewController.xib; path = ../AddRecipeViewController.xib; sourceTree = "<group>"; };
+		1F107943171E2CC500560E85 /* AddRecipeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddRecipeViewController.h; sourceTree = "<group>"; };
+		1F107944171E2CC500560E85 /* AddRecipeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddRecipeViewController.m; sourceTree = "<group>"; };
+		1F107945171E2CC500560E85 /* AddRecipeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddRecipeViewController.xib; sourceTree = "<group>"; };
 		1FF7B9A6171CB0FA00587A57 /* Recipe_Holder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recipe_Holder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FF7B9A9171CB0FA00587A57 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1FF7B9AB171CB0FA00587A57 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -162,7 +162,7 @@
 		1FF7B9CD171CB26C00587A57 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1F107940171D0D8B00560E85 /* AddRecipeViewController.xib */,
+				1F107945171E2CC500560E85 /* AddRecipeViewController.xib */,
 				1FF7B9D4171CB60700587A57 /* MainViewController.xib */,
 				1FF7B9E3171CBA8500587A57 /* MenuViewController.xib */,
 				1F06C57E171CE3A400607F5E /* RecipeFormView.h */,
@@ -174,8 +174,8 @@
 		1FF7B9CE171CB48500587A57 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				1F10793E171D0D8B00560E85 /* AddRecipeViewController.h */,
-				1F10793F171D0D8B00560E85 /* AddRecipeViewController.m */,
+				1F107943171E2CC500560E85 /* AddRecipeViewController.h */,
+				1F107944171E2CC500560E85 /* AddRecipeViewController.m */,
 				1FF7B9D2171CB60700587A57 /* MainViewController.h */,
 				1FF7B9D3171CB60700587A57 /* MainViewController.m */,
 				1FF7B9E1171CBA8500587A57 /* MenuViewController.h */,
@@ -254,7 +254,7 @@
 				1FF7B9C2171CB0FA00587A57 /* Default-568h@2x.png in Resources */,
 				1FF7B9D6171CB60700587A57 /* MainViewController.xib in Resources */,
 				1FF7B9E5171CBA8600587A57 /* MenuViewController.xib in Resources */,
-				1F107942171D0D8B00560E85 /* AddRecipeViewController.xib in Resources */,
+				1F107947171E2CC500560E85 /* AddRecipeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +276,7 @@
 				1FF7B9E4171CBA8600587A57 /* MenuViewController.m in Sources */,
 				1F06C582171CE5A200607F5E /* Ingredient.m in Sources */,
 				1F06C585171CE5A300607F5E /* Recipe.m in Sources */,
-				1F107941171D0D8B00560E85 /* AddRecipeViewController.m in Sources */,
+				1F107946171E2CC500560E85 /* AddRecipeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,4 +10,9 @@
 
 @interface MainViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UINavigationBar *navBar;
+
+- (IBAction)menuBtn:(id)sender;
+- (IBAction)addRecipeBtn:(id)sender;
+
 @end

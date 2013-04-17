@@ -31,18 +31,6 @@
 {
     [super viewDidLoad];
     
-    //use black bar style
-    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
-    self.navigationController.navigationBar.topItem.title = @"Recipes";
-    
-    //connect left bar button
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"left" style:UIBarButtonItemStyleBordered target:self.viewDeckController action:@selector(toggleLeftView)];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addRecipe)];
-    
-}
--(void)addRecipe {
-    AddRecipeViewController *addRecipe = [[AddRecipeViewController alloc]initWithNibName:@"AddRecipeViewController" bundle:nil];
-    [self presentViewController:addRecipe animated:YES completion:nil];
 }
 
 - (void)viewDidUnload
@@ -100,4 +88,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)menuBtn:(id)sender {
+    [self.viewDeckController toggleLeftView];
+}
+
+- (IBAction)addRecipeBtn:(id)sender {
+    AddRecipeViewController *addRecipe = [[AddRecipeViewController alloc]initWithNibName:@"AddRecipeViewController" bundle:nil];
+    [self presentViewController:addRecipe animated:YES completion:nil];
+}
 @end

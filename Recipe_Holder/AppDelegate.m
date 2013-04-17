@@ -24,8 +24,7 @@
     self.leftController = [[MenuViewController alloc] initWithNibName:@"MenuViewController" bundle:nil];
     
     MainViewController *centerController = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
-    self.centerController = [[UINavigationController alloc] initWithRootViewController:centerController];
-    IIViewDeckController* deckController =  [[IIViewDeckController alloc] initWithCenterViewController:self.centerController
+    IIViewDeckController* deckController =  [[IIViewDeckController alloc] initWithCenterViewController:centerController
                                                                                     leftViewController:self.leftController];
     
     deckController.leftSize = 70;
